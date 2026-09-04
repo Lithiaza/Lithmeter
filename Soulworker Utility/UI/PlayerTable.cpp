@@ -1036,9 +1036,21 @@ void PlayerTable::DrawStatusStrip() {
 	const uint64_t time = DAMAGEMETER.GetTime();
 	ImGui::Text("%s", DAMAGEMETER.GetWorldName());
 	ImGui::SameLine();
-	ImGui::TextDisabled("| %02llu:%02llu",
+	// Keep the original timer precision in the status strip.  The custom
+	// status layout previously rendered only minutes and seconds, even though
+	// the Timer Accuracy option still controlled the millisecond precision.
+	unsigned int milliseconds = static_cast<unsigned int>(time % 1000);
+	if (DAMAGEMETER.mswideness == 1)
+		milliseconds /= 100;
+	else if (DAMAGEMETER.mswideness == 2)
+		milliseconds /= 10;
+
+	char timerLabel[64] = { 0 };
+	sprintf_s(timerLabel, "| %02llu:%02llu.%u",
 		time / (60 * 1000),
-		(time / 1000) % 60);
+		(time / 1000) % 60,
+		milliseconds);
+	ImGui::TextDisabled("%s", timerLabel);
 
 	char pingLabel[64] = { 0 };
 	sprintf_s(pingLabel, "%s: %ums", LANGMANAGER.GetText("STR_MENU_PING").data(), DAMAGEMETER.GetPing());

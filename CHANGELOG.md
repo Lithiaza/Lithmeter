@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.1.31
+
+- Restored millisecond display in the elapsed timer while preserving the Timer Accuracy setting.
+
 ## 1.7.1.30
 
 - Fixed clean-install startup: Options no longer opens automatically.

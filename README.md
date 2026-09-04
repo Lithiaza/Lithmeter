@@ -11,7 +11,7 @@ Live damage tables, per-player breakdowns, skill tracking, buff uptime and comba
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-0078D6)
 ![Language](https://img.shields.io/badge/C%2B%2B-20-00599C)
 ![UI](https://img.shields.io/badge/UI-ImGui%20%2B%20DirectX%2011-5C2D91)
-![Version](https://img.shields.io/badge/version-1.7.1.30-brightgreen)
+![Version](https://img.shields.io/badge/version-1.7.1.31-brightgreen)
 
 </div>
 
@@ -34,7 +34,7 @@ On a clean install, the meter starts with no Options window, no demo data, and
 the original solid dark appearance. Use **Settings** to enable transparency or
 add test values when needed.
 
-For a smaller download, use the `LithMeter-v1.7.1.30-ReadyToRun.zip` release archive. It contains the same runtime payload without the source tree.
+For a smaller download, use the `LithMeter-v1.7.1.31-ReadyToRun.zip` release archive. It contains the same runtime payload without the source tree.
 
 ### Included runtime files
 
@@ -89,7 +89,7 @@ LithMeter is an unofficial community fork/custom UI. It builds on the SoulMeter 
 | **Rainy** | Earlier SoulMeter maintenance and build/UI work this fork builds on |
 | **[FeAr](https://github.com/fearek/DPSMeter/)** | Global-server meter lineage |
 | **[Park3740](https://github.com/Park3740/SoulMeter)** | Original SoulMeter project |
-| **[Lithiaza](https://github.com/0xarray/SoulMeter-1)** | This custom stacked UI, skill tracking and release packaging |
+| **[Lithiaza](https://github.com/Lithiaza/Lithmeter)** | This custom stacked UI, skill tracking and release packaging |
 
 Please keep this attribution and the included `LICENSE.txt` when redistributing the source. Third-party notices remain in their respective directories under `Soulworker Utility/Third Party/`.
 

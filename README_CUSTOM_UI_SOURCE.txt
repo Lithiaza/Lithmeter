@@ -1,7 +1,7 @@
 LithMeter developer notes
 =========================
 
-Version 1.7.1.30
+Version 1.7.1.31
 
 This source package contains the custom stacked meter UI and the runtime files
 published in the release/ directory. The ready-to-run release does not require
