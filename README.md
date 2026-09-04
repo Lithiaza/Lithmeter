@@ -86,7 +86,7 @@ LithMeter is an unofficial community fork/custom UI. It builds on the SoulMeter 
 | Contributor | Credit |
 |---|---|
 | **[AFNGP / AFN](https://github.com/AFNGP/SoulMeter)** | Upstream SoulMeter maintenance and feature work |
-| **Rainy** | Earlier SoulMeter maintenance and build/UI work this fork builds on |
+| **[Rainy](https://github.com/0xarray)** | Earlier SoulMeter maintenance and build/UI work this fork builds on |
 | **[FeAr](https://github.com/fearek/DPSMeter/)** | Global-server meter lineage |
 | **[Park3740](https://github.com/Park3740/SoulMeter)** | Original SoulMeter project |
 | **[Lithiaza](https://github.com/Lithiaza/Lithmeter)** | This custom stacked UI, skill tracking and release packaging |
