@@ -3,6 +3,8 @@
 ## 1.7.1.31
 
 - Restored millisecond display in the elapsed timer while preserving the Timer Accuracy setting.
+- Fixed the elapsed timer's minutes/seconds order and defaulted fresh installs to three-digit milliseconds.
+- Fixed a startup crash caused by the timer accuracy value being passed as a text format pointer.
 
 ## 1.7.1.30
 

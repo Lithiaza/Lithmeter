@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SDM>
-    <Option IsTopMost="1" IsTableOverlayMode="false" IsStackedMeterMode="true" IsUseImage="0" GlobalScale="1" TableScale="1" ColumnScale="1" K="0" M="0" Man="0" IsSoloMode="0" DoHideName="0" TeamTA_LF="0" TeamTA_LF_Mode="1" IsSoloRankMode="0" IsUseSaveData="0" CellPaddingX="6" CellPaddingY="4" BorderSize="1" WindowWidth="800" RefreshTime="0.30000001" MeterOpacity="1.0" MeterTransparencyEnabled="false" StackedRowsVisibility="11111111111000000000000000000000000000000000000000000" StackedRowsPresetVersion="1" LogFile="false" LogMonsterStats="false" TimerAcc="1" UseImage="0" UseLangFile="en.json" UseFontFile="NotoSansAll-Bold.ttf" IsDontSaveUnfinishedMaze="0"/>
+    <Option IsTopMost="1" IsTableOverlayMode="false" IsStackedMeterMode="true" IsUseImage="0" GlobalScale="1" TableScale="1" ColumnScale="1" K="0" M="0" Man="0" IsSoloMode="0" DoHideName="0" TeamTA_LF="0" TeamTA_LF_Mode="1" IsSoloRankMode="0" IsUseSaveData="0" CellPaddingX="6" CellPaddingY="4" BorderSize="1" WindowWidth="800" RefreshTime="0.30000001" MeterOpacity="1.0" MeterTransparencyEnabled="false" StackedRowsVisibility="11111111111000000000000000000000000000000000000000000" StackedRowsPresetVersion="1" LogFile="false" LogMonsterStats="false" TimerAcc="3" UseImage="0" UseLangFile="en.json" UseFontFile="NotoSansAll-Bold.ttf" IsDontSaveUnfinishedMaze="0"/>
     <TextColor r="0.88999999" g="0.92000002" b="0.94999999" a="1"/>
     <WindowBgColor r="0.035" g="0.050000001" b="0.064999998" a="1"/>
     <OutlineColor r="0" g="0" b="0" a="1"/>

@@ -569,7 +569,7 @@ private:
 	bool _testMode = FALSE;
 
 public:
-	int mswideness = 1;
+	int mswideness = 3;
 	bool shouldRebuildAtlas = false;
 	bool shouldLogMonsterStats = false;
 	uint32_t _ping = 0;
