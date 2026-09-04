@@ -11,7 +11,7 @@ Live damage tables, per-player breakdowns, skill tracking, buff uptime and comba
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-0078D6)
 ![Language](https://img.shields.io/badge/C%2B%2B-20-00599C)
 ![UI](https://img.shields.io/badge/UI-ImGui%20%2B%20DirectX%2011-5C2D91)
-![Version](https://img.shields.io/badge/version-1.7.1.29-brightgreen)
+![Version](https://img.shields.io/badge/version-1.7.1.30-brightgreen)
 
 </div>
 
@@ -25,9 +25,16 @@ The repository includes a checked-in `release/` folder. End users do **not** nee
 2. Keep every file in `release/` together.
 3. Run `release/SoulMeter.exe` as Administrator before starting SoulWorker.
 
-The meter waits for SoulWorker, attaches automatically, and creates `option.xml` and `imgui.ini` beside the executable after the first launch. Those files are intentionally not included in the repository because they are user-specific settings.
+The meter waits for SoulWorker and attaches automatically. A clean default
+`option.xml` is included in the ready-to-run folder; later changes are saved
+beside the executable. `imgui.ini` is created after first launch as a
+user-specific setting.
 
-For a smaller download, use the `LithMeter-v1.7.1.29-ReadyToRun.zip` release archive. It contains the same runtime payload without the source tree.
+On a clean install, the meter starts with no Options window, no demo data, and
+the original solid dark appearance. Use **Settings** to enable transparency or
+add test values when needed.
+
+For a smaller download, use the `LithMeter-v1.7.1.30-ReadyToRun.zip` release archive. It contains the same runtime payload without the source tree.
 
 ### Included runtime files
 
@@ -37,6 +44,7 @@ release/
 ├── SoulMeterHook.dll
 ├── sqlite3.dll
 ├── SWDB.db
+├── option.xml
 └── Lang/
     ├── en.json
     ├── jp.json
@@ -67,9 +75,9 @@ release/
 
 ## Building from source
 
-Building is only needed for contributors. Use **Visual Studio 2022** with the v143 C++ toolset and a Windows 10/11 SDK. Open `Soulworker Utility.sln`, select **Release** and **x64**, then build. `BUILD_EXE.cmd` is an optional developer convenience script; it is not needed by users of the included release build.
+Building is only needed for contributors. Use **Visual Studio 2022** with the v143 C++ toolset and a Windows 10/11 SDK. Open `Soulworker Utility.sln`, select **Release** and **x64**, then build. Command scripts are intentionally omitted; users should use the included release build.
 
-The solution builds the meter and its capture hook, then copies the database and language files beside the executable. Do not commit Visual Studio output, PDBs or personal `option.xml` / `imgui.ini` files.
+The solution builds the meter and its capture hook, then copies the database and language files beside the executable. Do not commit Visual Studio output, PDBs or personal `imgui.ini` files. The checked-in `release/option.xml` is the clean-install default template.
 
 ## Attribution
 
@@ -90,4 +98,3 @@ Please keep this attribution and the included `LICENSE.txt` when redistributing 
 SoulMeter observes SoulWorker client traffic and injects its capture hook into the game process. Use it only where permitted by the game publisher and server rules. It is provided **as-is and at your own risk**; do not discuss or advertise meter use in public in-game chat if that violates local rules.
 
 SoulWorker, its assets and trademarks belong to their respective owners. LithMeter is not affiliated with or endorsed by the game publisher.
-

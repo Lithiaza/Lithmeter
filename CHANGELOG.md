@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.1.30
+
+- Fixed clean-install startup: Options no longer opens automatically.
+- Removed automatic demo/test data injection on first launch.
+- Restored the original solid dark meter defaults; transparency is opt-in.
+
 ## 1.7.1.29
 
 - Prepared a public GitHub source tree and ready-to-run x64 release payload.
@@ -7,4 +13,3 @@
 - Removed generated Visual Studio output, PDBs and user-specific settings from
   the public package.
 - Documented AFN/AFNGP, Rainy, FeAr, Park3740 and Lithiaza attribution.
-

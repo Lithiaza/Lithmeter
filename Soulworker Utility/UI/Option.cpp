@@ -46,7 +46,11 @@ UiOption::UiOption()  :
 	_open(0), _framerate(1), _windowBorderSize(1), _fontScale(1), _columnFontScale(1), _tableFontScale(1), 
 	_is1K(0), _is1M(0), _is10K(0), _isSoloMode(0), _hideName(0), _isTopMost(true), _isTableOverlayMode(false), _isStackedMeterMode(true), _teamTA_LF(false), _isSoloRankMode(FALSE), _isUseSaveData(FALSE),
 	_isDontSaveUnfinishedMaze(false),
-	_cellPadding(0, 0), _windowWidth(800), _refreshTime((float)0.3), _meterOpacity(0.72f), _meterTransparencyEnabled(true), _oriIsUseSaveData(FALSE), _selectedFontFile("NotoSansAll-Bold.ttf")
+	_cellPadding(0, 0), _windowWidth(800), _refreshTime((float)0.3),
+	// A clean install should match the original solid meter. Users can enable
+	// transparency and choose an opacity from the Options window.
+	_meterOpacity(1.0f), _meterTransparencyEnabled(false),
+	_oriIsUseSaveData(FALSE), _selectedFontFile("NotoSansAll-Bold.ttf")
 {
 	
 	_jobBasicColor[0] = ImVec4(ImGui::ColorConvertU32ToFloat4(ImColor(153, 153, 153, 255)));	// Unknown
@@ -449,7 +453,6 @@ void UiOption::OpenOption() {
 	_open = TRUE;
 
 	if (DAMAGEMETER.size() < 1) {
-		Helper();
 		PLAYERTABLE.ResizeTalbe();
 	}
 
@@ -1215,9 +1218,10 @@ bool UiOption::SetBasicOption() {
 	_windowBorderSize = style.WindowBorderSize;
 	_cellPadding = style.CellPadding;
 
-	Helper();
 	PLAYERTABLE.ResizeTalbe();
-	_open = TRUE;
+	// Do not open the Options window or inject demo data on first launch.
+	// The user can open Settings manually and use Add Test Value when desired.
+	_open = FALSE;
 
 	return TRUE;
 }

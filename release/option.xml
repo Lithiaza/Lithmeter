@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDM>
+    <Option IsTopMost="1" IsTableOverlayMode="false" IsStackedMeterMode="true" IsUseImage="0" GlobalScale="1" TableScale="1" ColumnScale="1" K="0" M="0" Man="0" IsSoloMode="0" DoHideName="0" TeamTA_LF="0" TeamTA_LF_Mode="1" IsSoloRankMode="0" IsUseSaveData="0" CellPaddingX="6" CellPaddingY="4" BorderSize="1" WindowWidth="800" RefreshTime="0.30000001" MeterOpacity="1.0" MeterTransparencyEnabled="false" StackedRowsVisibility="11111111111000000000000000000000000000000000000000000" StackedRowsPresetVersion="1" LogFile="false" LogMonsterStats="false" TimerAcc="1" UseImage="0" UseLangFile="en.json" UseFontFile="NotoSansAll-Bold.ttf" IsDontSaveUnfinishedMaze="0"/>
+    <TextColor r="0.88999999" g="0.92000002" b="0.94999999" a="1"/>
+    <WindowBgColor r="0.035" g="0.050000001" b="0.064999998" a="1"/>
+    <OutlineColor r="0" g="0" b="0" a="1"/>
+    <ActiveColor r="0.055" g="0.1" b="0.13" a="1"/>
+    <InActiveColor r="0.029999999" g="0.045000002" b="0.059999999" a="1"/>
+    <JobColor0 r="0.60000002" g="0.60000002" b="0.60000002" a="1"/>
+    <JobColor1 r="0.96862751" g="0.55686277" b="0.23137257" a="1"/>
+    <JobColor2 r="0.23137257" g="0.57647061" b="0.96862751" a="1"/>
+    <JobColor3 r="0.96862751" g="0.23137257" b="0.61176473" a="1"/>
+    <JobColor4 r="0.96862751" g="0.74509805" b="0.23137257" a="1"/>
+    <JobColor5 r="0.63137257" g="0.23137257" b="0.96862751" a="1"/>
+    <JobColor6 r="0.87450987" g="0.0039215689" b="0.0039215689" a="1"/>
+    <JobColor7 r="0.5411765" g="0.0078431377" b="0.015686275" a="1"/>
+    <JobColor8 r="0.46274513" g="0.80784321" b="0.61960787" a="1"/>
+    <JobColor9 r="0.50196081" g="0.50196081" b="0.25098041" a="1"/>
+    <JobColor10 r="0.25490198" g="0.15686275" b="0.60392159" a="1"/>
+    <HOTKEY0 key1="29" key2="211" key3="-1">Clear</HOTKEY0>
+    <HOTKEY1 key1="-1" key2="-1" key3="-1">RestartMaze</HOTKEY1>
+    <HOTKEY2 key1="-1" key2="-1" key3="-1">ExitMaze</HOTKEY2>
+</SDM>
